@@ -7,7 +7,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 const INITIAL_DISPLAY_COUNT = 10;
 
 export function Achievements() {
-  const { t, isEn } = useLanguage();
+  const { t, lang } = useLanguage();
   const [showAll, setShowAll] = useState(false);
 
   return (
@@ -29,11 +29,11 @@ export function Achievements() {
               </span>
               <div className="flex-1">
                 <span className="text-neutral-900 dark:text-neutral-100">
-                  {isEn ? achievement.titleEn : achievement.title}
+                  {achievement.title[lang]}
                 </span>
                 {achievement.award && (
                   <span className="text-neutral-500 dark:text-neutral-400">
-                    {" "}— {isEn ? achievement.awardEn : achievement.award}
+                    {" "}— {achievement.award[lang]}
                   </span>
                 )}
               </div>
@@ -46,7 +46,7 @@ export function Achievements() {
           onClick={() => setShowAll(!showAll)}
           className="mt-4 text-sm text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
         >
-          {showAll ? (isEn ? "− Show less" : "− 閉じる") : (isEn ? `+ Show more (${achievements.length - INITIAL_DISPLAY_COUNT})` : `+ もっと見る (${achievements.length - INITIAL_DISPLAY_COUNT})`)}
+          {showAll ? `− ${t.showLess}` : `+ ${t.showMore} (${achievements.length - INITIAL_DISPLAY_COUNT})`}
         </button>
       )}
     </section>

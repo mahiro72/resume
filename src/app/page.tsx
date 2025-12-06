@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Achievements } from "@/components/Achievements";
+import { Interviews } from "@/components/Interviews";
 import { Links } from "@/components/Links";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LanguageToggle } from "@/components/LanguageToggle";
@@ -20,6 +21,7 @@ export default function Home() {
         <Experience />
         <Skills />
         <Achievements />
+        <Interviews />
       </div>
     </main>
   );

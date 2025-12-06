@@ -1,31 +1,30 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode } from "react";
-import { Language, translations, Translations } from "@/i18n/translations";
+import type { Language } from "@/types/i18n";
+import { translations, type Translations } from "@/i18n/translations";
 
 interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
+  lang: Language;
+  setLang: (lang: Language) => void;
   toggleLanguage: () => void;
   t: Translations;
-  isEn: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en");
+  const [lang, setLang] = useState<Language>("en");
 
   const toggleLanguage = () => {
-    setLanguage(language === "ja" ? "en" : "ja");
+    setLang(lang === "ja" ? "en" : "ja");
   };
 
   const value: LanguageContextType = {
-    language,
-    setLanguage,
+    lang,
+    setLang,
     toggleLanguage,
-    t: translations[language],
-    isEn: language === "en",
+    t: translations[lang],
   };
 
   return (

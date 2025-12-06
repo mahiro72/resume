@@ -5,26 +5,25 @@ import { profile } from "@/data/profile";
 import { useLanguage } from "@/hooks/useLanguage";
 
 export function Header() {
-  const { isEn } = useLanguage();
-  const bio = isEn ? profile.bioEn : profile.bio;
-  const paragraphs = bio.split("\n\n");
+  const { lang } = useLanguage();
+  const paragraphs = profile.bio[lang].split("\n\n");
 
   return (
     <header className="mb-16">
       <div className="flex items-center gap-4 mb-4">
         <Image
           src={profile.avatar}
-          alt={profile.name}
+          alt={profile.name[lang]}
           width={80}
           height={80}
           className="rounded-full"
         />
         <div>
           <h1 className="text-2xl font-medium text-neutral-900 dark:text-neutral-100">
-            {isEn ? profile.nameEn : profile.name}
+            {profile.name[lang]}
           </h1>
           <p className="text-neutral-500 dark:text-neutral-400">
-            {isEn ? profile.titleEn : profile.title}
+            {profile.title[lang]}
           </p>
         </div>
       </div>
@@ -34,7 +33,7 @@ export function Header() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
-          {isEn ? profile.locationEn : profile.location}
+          {profile.location[lang]}
         </span>
         <a href={`mailto:${profile.email}`} className="flex items-center gap-1 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

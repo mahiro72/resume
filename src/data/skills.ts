@@ -1,18 +1,21 @@
+import type { Localized } from "@/types/i18n";
+
 export interface Skill {
   name: string;
   level: number; // 1-5
 }
 
 export interface SkillCategory {
-  category: string;
-  categoryEn: string;
+  category: Localized;
   skills: Skill[];
 }
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "フロントエンド",
-    categoryEn: "Frontend",
+    category: {
+      ja: "フロントエンド",
+      en: "Frontend",
+    },
     skills: [
       { name: "TypeScript", level: 3 },
       { name: "React", level: 3 },
@@ -21,8 +24,10 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: "バックエンド",
-    categoryEn: "Backend",
+    category: {
+      ja: "バックエンド",
+      en: "Backend",
+    },
     skills: [
       { name: "Go", level: 5 },
       { name: "Python", level: 5 },
@@ -33,8 +38,10 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: "インフラ / DevOps",
-    categoryEn: "Infrastructure / DevOps",
+    category: {
+      ja: "インフラ / DevOps",
+      en: "Infrastructure / DevOps",
+    },
     skills: [
       // Cloud
       { name: "GCP", level: 4 },
@@ -54,8 +61,10 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: "その他",
-    categoryEn: "Others",
+    category: {
+      ja: "その他",
+      en: "Others",
+    },
     skills: [
       { name: "Microservices", level: 3 },
       { name: "DDD", level: 3 },

@@ -7,7 +7,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 const INITIAL_DISPLAY_COUNT = 5;
 
 export function Experience() {
-  const { t, isEn } = useLanguage();
+  const { t, lang } = useLanguage();
   const [showAllWork, setShowAllWork] = useState(false);
   const [showAllEducation, setShowAllEducation] = useState(false);
 
@@ -31,14 +31,14 @@ export function Experience() {
               >
                 <div className="flex justify-between items-baseline gap-4 mb-1">
                   <h3 className="font-medium text-neutral-900 dark:text-neutral-100">
-                    {isEn ? exp.nameEn : exp.name}
+                    {exp.name[lang]}
                   </h3>
                   <span className="text-sm text-neutral-400 dark:text-neutral-500 tabular-nums shrink-0">
-                    {isEn ? exp.dateEn : exp.date}
+                    {exp.date[lang]}
                   </span>
                 </div>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  {isEn ? exp.descriptionEn : exp.description}
+                  {exp.description[lang]}
                 </p>
               </div>
             );
@@ -49,7 +49,7 @@ export function Experience() {
             onClick={() => setShowAllWork(!showAllWork)}
             className="mt-4 text-sm text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
           >
-            {showAllWork ? (isEn ? "− Show less" : "− 閉じる") : (isEn ? `+ Show more (${workExperiences.length - INITIAL_DISPLAY_COUNT})` : `+ もっと見る (${workExperiences.length - INITIAL_DISPLAY_COUNT})`)}
+            {showAllWork ? `− ${t.showLess}` : `+ ${t.showMore} (${workExperiences.length - INITIAL_DISPLAY_COUNT})`}
           </button>
         )}
       </section>
@@ -69,14 +69,14 @@ export function Experience() {
               >
                 <div className="flex justify-between items-baseline gap-4 mb-1">
                   <h3 className="font-medium text-neutral-900 dark:text-neutral-100">
-                    {isEn ? exp.nameEn : exp.name}
+                    {exp.name[lang]}
                   </h3>
                   <span className="text-sm text-neutral-400 dark:text-neutral-500 tabular-nums shrink-0">
-                    {isEn ? exp.dateEn : exp.date}
+                    {exp.date[lang]}
                   </span>
                 </div>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                  {isEn ? exp.descriptionEn : exp.description}
+                  {exp.description[lang]}
                 </p>
               </div>
             );
@@ -87,7 +87,7 @@ export function Experience() {
             onClick={() => setShowAllEducation(!showAllEducation)}
             className="mt-4 text-sm text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300 transition-colors"
           >
-            {showAllEducation ? (isEn ? "− Show less" : "− 閉じる") : (isEn ? `+ Show more (${educationExperiences.length - INITIAL_DISPLAY_COUNT})` : `+ もっと見る (${educationExperiences.length - INITIAL_DISPLAY_COUNT})`)}
+            {showAllEducation ? `− ${t.showLess}` : `+ ${t.showMore} (${educationExperiences.length - INITIAL_DISPLAY_COUNT})`}
           </button>
         )}
       </section>
