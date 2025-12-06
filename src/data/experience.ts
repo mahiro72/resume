@@ -13,8 +13,8 @@ export const experiences: Experience[] = [
   // 現在の職歴
   {
     date: {
-      ja: "2023/04 - 現在 (2022/06 - 2023/03 アルバイト)",
-      en: "2023/04 - Present (2022/06 - 2023/03 Part-time)",
+      ja: "2023/04 - 現在",
+      en: "2023/04 - Present",
     },
     name: {
       ja: "株式会社ZOZO",
