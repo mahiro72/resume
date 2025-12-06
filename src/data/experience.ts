@@ -239,6 +239,21 @@ export const experiences: Experience[] = [
   // 学歴
   {
     date: {
+      ja: "2019/04 - 2023/03",
+      en: "2019/04 - 2023/03",
+    },
+    name: {
+      ja: "同志社大学",
+      en: "Doshisha University",
+    },
+    description: {
+      ja: "統計学や機械学習、データサイエンスなどを学んでいます",
+      en: "Studying Statistics, Machine Learning, and Data Science",
+    },
+    type: "education",
+  },
+  {
+    date: {
       ja: "2022/03 - 2023/03",
       en: "2022/03 - 2023/03",
     },
@@ -266,20 +281,5 @@ export const experiences: Experience[] = [
       en: "Working on implementing libc and printf",
     },
     type: "education",
-  },
-  {
-    date: {
-      ja: "2019/04 - 2023/03",
-      en: "2019/04 - 2023/03",
-    },
-    name: {
-      ja: "同志社大学",
-      en: "Doshisha University",
-    },
-    description: {
-      ja: "統計学や機械学習、データサイエンスなどを学んでいます",
-      en: "Studying Statistics, Machine Learning, and Data Science",
-    },
-    type: "education",
-  },
+  }
 ];
