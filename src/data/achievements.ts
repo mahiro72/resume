@@ -51,17 +51,18 @@ export const achievements: Achievement[] = [
       en: "Guest Judge",
     },
   },
-  {
-    date: "2023/03",
-    title: {
-      ja: "みやぎハッカソン 2022",
-      en: "Miyagi Hackathon 2022",
-    },
-    award: {
-      ja: "出場",
-      en: "Participant",
-    },
-  },
+  // 受賞ではないのでコメントアウト
+  // {
+  //   date: "2023/03",
+  //   title: {
+  //     ja: "みやぎハッカソン 2022",
+  //     en: "Miyagi Hackathon 2022",
+  //   },
+  //   award: {
+  //     ja: "出場",
+  //     en: "Participant",
+  //   },
+  // },
   {
     date: "2023/03",
     title: {
@@ -117,17 +118,18 @@ export const achievements: Achievement[] = [
       en: "Excellence Award",
     },
   },
-  {
-    date: "2022/09",
-    title: {
-      ja: "技育展 2022「DITA」",
-      en: "Geek Exhibition 2022 'DITA'",
-    },
-    award: {
-      ja: "登壇",
-      en: "Presenter",
-    },
-  },
+  // 受賞ではないのでコメントアウト
+  // {
+  //   date: "2022/09",
+  //   title: {
+  //     ja: "技育展 2022「DITA」",
+  //     en: "Geek Exhibition 2022 'DITA'",
+  //   },
+  //   award: {
+  //     ja: "登壇",
+  //     en: "Presenter",
+  //   },
+  // },
   {
     date: "2022/09",
     title: {
