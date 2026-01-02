@@ -4,6 +4,7 @@ export interface Translations {
   // Section titles
   experience: string;
   skills: string;
+  certifications: string;
   achievements: string;
   interviews: string;
   links: string;
@@ -27,6 +28,7 @@ export const translations: Record<Language, Translations> = {
   ja: {
     experience: "経歴",
     skills: "スキル",
+    certifications: "資格",
     achievements: "受賞・実績",
     interviews: "インタビュー",
     links: "リンク",
@@ -44,6 +46,7 @@ export const translations: Record<Language, Translations> = {
   en: {
     experience: "Experience",
     skills: "Skills",
+    certifications: "Certifications",
     achievements: "Achievements",
     interviews: "Interviews",
     links: "Links",
