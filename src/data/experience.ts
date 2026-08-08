@@ -32,12 +32,12 @@ export const experiences: Experience[] = [
       en: "2025/03 - Present",
     },
     name: {
-      ja: "合同会社 Bit Blend",
-      en: "Bit Blend LLC",
+      ja: "まほろば創研株式会社",
+      en: "Mahoroba Souken Inc.",
     },
     description: {
-      ja: "業務委託（テックリード）/ AI・ITスタートアップ企業の開発や技術検証、設計支援などに取り組んでいます。",
-      en: "Tech Lead / Development, technical validation, and architecture support for AI/IT startups",
+      ja: "業務委託(テックリード) / 設備異常の予知保全に特化したAIやSaaSの開発に取り組んでいます。",
+      en: "Software Engineer / Developing AI and SaaS specialized in predictive maintenance for equipment anomalies",
     },
     type: "work",
   },
