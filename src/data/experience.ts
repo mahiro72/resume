@@ -43,8 +43,8 @@ export const experiences: Experience[] = [
   },
   {
     date: {
-      ja: "2025/03 - 現在",
-      en: "2025/03 - Present",
+      ja: "2025/03 - 2026/3",
+      en: "2025/03 - 2026/3",
     },
     name: {
       ja: "株式会社 Prefab",
@@ -58,8 +58,8 @@ export const experiences: Experience[] = [
   },
   {
     date: {
-      ja: "2024/09 - 2025/06(お休み中)",
-      en: "2024/09 - 2025/06 (On break)",
+      ja: "2024/09 - 2025/06",
+      en: "2024/09 - 2025/06",
     },
     name: {
       ja: "株式会社 STAR UP",
@@ -73,8 +73,8 @@ export const experiences: Experience[] = [
   },
   {
     date: {
-      ja: "2024/08 - 2025/06(お休み中)",
-      en: "2024/08 - 2025/06 (On break)",
+      ja: "2024/08 - 2025/06",
+      en: "2024/08 - 2025/06",
     },
     name: {
       ja: "株式会社 SPARQ",

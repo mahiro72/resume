@@ -19,17 +19,6 @@ export const achievements: Achievement[] = [
     },
   },
   {
-    date: "2024/07",
-    title: {
-      ja: "IVS LAUNCHPAD (AI VOLT)",
-      en: "IVS LAUNCHPAD (AI VOLT)",
-    },
-    award: {
-      ja: "登壇",
-      en: "Presenter",
-    },
-  },
-  {
     date: "2024/02",
     title: {
       ja: "Qiitaハッカソン",
